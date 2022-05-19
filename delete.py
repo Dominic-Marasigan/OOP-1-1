@@ -3,6 +3,7 @@ import pyodbc
 try:
     connection = pyodbc.connect(r'Driver={Microsoft Access Driver (*.mdb, *.accdb)}; '
                                 r'DBQ=C:\Users\lenovo\Documents\Database1.accdb;')
+    print("Database is Connected")
     user_id = 10
 
     database = connection.cursor()
